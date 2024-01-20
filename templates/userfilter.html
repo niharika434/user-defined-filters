@@ -1,0 +1,24 @@
+{% load usdfilters %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>User Defined Filter</h1>
+       <h3> {{data}} <br><br>
+        {{data|swapping}} <br> <br>
+        {{data|remove:'H'}} <br><br>
+        {{data|counting:'i'}} <br><br>
+        {{data|counting:'is'}}</h3> <br><br>
+        {{data|uppercase}} <br><br>
+        {{data|lower}} <br><br>
+        {{data|title}} <br><br>
+        
+    </center>
+</body>
+</html>
